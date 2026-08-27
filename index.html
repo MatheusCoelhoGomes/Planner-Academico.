@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planner Acadêmico</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="png" href="icon.png">
+  <script src="sync.js" defer></script>
+  <script src="home.js" defer></script>
+</head>
+
+<body class="home-body">
+  <main class="home-shell">
+    <section class="home-intro">
+      <div class="home-brand">
+        <span>Planner Acadêmico</span>
+      </div>
+
+      <h1>Entre com sua chave do cofre</h1>
+      <p>
+        Seus dados ficam neste navegador. A chave criptografa uma cópia salva na
+        planilha privada e permite recuperar tudo em outro dispositivo.
+      </p>
+    </section>
+
+    <section class="home-panel" aria-labelledby="home-cofre-title">
+      <h2 id="home-cofre-title">Cofre de dados</h2>
+
+      <label class="sync-label" for="home-chave">Chave de acesso</label>
+      <textarea id="home-chave" class="sync-key-field home-key-field" spellcheck="false"></textarea>
+
+      <div class="home-button-grid">
+        <button type="button" id="home-usar-chave">Usar esta chave</button>
+        <button type="button" id="home-copiar-chave">Copiar chave</button>
+        <button type="button" id="home-nova-chave">Nova chave</button>
+      </div>
+
+      <div class="home-primary-grid">
+        <button type="button" class="home-secondary-action" id="home-carregar-entrar">Carregar da planilha e entrar</button>
+        <button type="button" class="home-primary-action" id="home-entrar">Entrar com dados locais</button>
+      </div>
+
+      <button type="button" class="home-save-cloud" id="home-salvar-planilha">Salvar dados locais na planilha</button>
+
+      <p class="sync-status home-status" id="home-status" aria-live="polite"></p>
+    </section>
+
+    <section class="home-help" aria-label="Como usar">
+      <article>
+        <h3>Primeiro acesso</h3>
+        <p>
+          Use a chave gerada automaticamente e clique em <strong>Entrar com dados locais</strong>.
+          Depois de preencher agenda, notas ou faltas, as mudanças serão criptografadas e salvas automaticamente.
+        </p>
+      </article>
+
+      <article>
+        <h3>Outro dispositivo</h3>
+        <p>
+          Cole sua chave, clique em <strong>Usar esta chave</strong> e depois em
+          <strong>Carregar da planilha e entrar</strong>.
+        </p>
+      </article>
+
+      <article>
+        <h3>O que os botões fazem</h3>
+        <p>
+          <strong>Copiar chave</strong> guarda a chave para backup. <strong>Nova chave</strong>
+          cria um cofre separado. <strong>Salvar dados locais na planilha</strong> força
+          um backup criptografado imediato quando você quiser conferir.
+        </p>
+      </article>
+
+      <article>
+        <h3>Guarde sua chave</h3>
+        <p>
+          Quem perde a chave perde o acesso à cópia salva na planilha. Ela não deve
+          ser publicada nem enviada em grupos. Sem a chave, nem a equipe do projeto consegue ler o cofre.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Coelho, Plakhotnikov, Versiani, Trindade. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
